@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevOps Bewerbungsseite</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Haupt-Container: Enthält Bio (Text + Foto) -->
+    <div class="container bio-section">
+      <div class="bio-text">
+        <h1>Willkommen auf meiner DevOps-Bewerbungsseite</h1>
+        <p>
+          Ich bin Max Mustermann, 25 Jahre alt und wohne in Musterstadt.
+          Meine Leidenschaft für DevOps und Coding treibt mich täglich an, innovative Lösungen zu entwickeln
+          und Prozesse zu automatisieren. Ich liebe es, Infrastruktur effizient zu gestalten
+          und setze auf moderne Technologien, um zuverlässige und skalierbare Anwendungen zu unterstützen.
+        </p>
+        <p>
+          Ich bin stets auf der Suche nach neuen Herausforderungen, um meine
+          Fähigkeiten weiter auszubauen. Wenn du an einer Zusammenarbeit interessiert bist,
+          freue ich mich über eine Nachricht!
+        </p>
+      </div>
+      <div class="photo-container">
+        <!-- Hier kannst du dein Bewerbungsfoto hinterlegen -->
+        <img src="image.jpg" alt="Bewerbungsfoto" class="profile-img" />
+      </div>
+    </div>
+  
+    <h2>Skills</h2>
+    <p>Klicke auf einen Skill, um (falls vorhanden) ein Zertifikat anzuzeigen.</p>
+    <div class="skills">
+      <!-- Jeder .skill wird im JavaScript anhand ihres Textinhalts erkannt und bekommt ein zugeordnetes Bild. 
+           Ist keins hinterlegt, zeigt das Modal "Zertifikat ist in progress" an. -->
+      <div class="skill">Linux & Bash</div>
+      <div class="skill">Python</div>
+      <div class="skill">Git</div>
+      <div class="skill">Git Workflow</div>
+      <div class="skill">Jenkins</div>
+      <div class="skill">Docker</div>
+      <div class="skill">Kubernetes</div>
+      <div class="skill">Terraform</div>
+      <div class="skill">Ansible</div>
+      <div class="skill">Grafana</div>
+      <div class="skill">Prometheus</div>
+      <div class="skill">Azure Cloud</div>
+    </div>
+  
+    <!-- Modales Fenster -->
+    <div id="cert-modal" class="modal">
+      <span class="close">&times;</span>
+      <!-- Rechtsklick deaktiviert -->
+      <img class="modal-content" id="cert-image" oncontextmenu="return false;" />
+      <!-- "Zertifikat ist in progress" -->
+      <div id="cert-text" class="modal-text"></div>
+      <!-- Bildunterschrift -->
+      <div id="caption"></div>
+    </div>
+  
+    <!-- Social-Links (LinkedIn und GitHub) -->
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/deinprofil" target="_blank" rel="noopener noreferrer">
+        LinkedIn
+      </a>
+      |
+      <a href="https://github.com/deinprofil" target="_blank" rel="noopener noreferrer">
+        GitHub
+      </a>
+    </div>
+   <!-- Externer JavaScript-Link -->
+   <script src="index.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,169 @@
+/* Globales Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Container für den Bio-Bereich (Text + Foto) */
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.bio-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Damit es bei schmalen Bildschirmen umbricht */
+    text-align: left; 
+    gap: 20px;        /* Abstände zwischen Text und Bild */
+}
+
+/* Text-Bereich */
+.bio-text {
+    flex: 1;
+}
+
+/* Container für das Bewerbungsfoto */
+.photo-container {
+    margin-left: 20px;
+}
+
+/* Rundes Profilbild mit einem kleinen Rahmen */
+.profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #4db6ac;
+}
+
+/* Überschriften und Texte */
+h1 {
+    color: #4db6ac;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #4db6ac;
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Skills-Anzeige */
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.skill {
+    background: linear-gradient(135deg, #4db6ac, #2a8a8a);
+    color: #1e1e2f;
+    padding: 12px 24px;
+    margin: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1em;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+    cursor: pointer; /* Zeigt an, dass es klickbar ist */
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+/* Modales Fenster */
+.modal {
+  display: none; /* Standard: ausgeblendet */
+  position: fixed;
+  z-index: 1000; /* Vor dem Rest der Seite */
+  padding-top: 100px;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8); /* Dunkler Overlay-Hintergrund */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  border: 4px solid #4db6ac;
+  border-radius: 8px;
+}
+
+/* Zusätzliche Klasse für "in progress"-Text */
+.modal-text {
+  display: none; 
+  color: #4db6ac;
+  font-size: 1.5em;
+  margin: 20px 0;
+}
+
+.close {
+  position: absolute;
+  top: 60px;
+  right: 60px;
+  color: #4db6ac;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#caption {
+  margin: 15px 0;
+  font-size: 1.2em;
+  color: #4db6ac;
+}
+
+/* Social-Links am unteren Seitenrand */
+.social-links {
+  margin-top: 40px;
+  font-size: 1.2em;
+}
+
+.social-links a {
+  color: #4db6ac;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Keyframe für Fade-In-Effekt */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
