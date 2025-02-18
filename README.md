@@ -36,8 +36,8 @@ Willkommen zu deiner persönlichen DevOps-Bewerbungsseite! Dieses Projekt stellt
 
     ```
     const skillImageMap = {
-      'linux': 'certificates/linux_cert.jpg',
-      'bash': 'certificates/bash_cert.jpg',
+      'linux': 'certificates/linux_cert.png',
+      'bash': 'certificates/bash_cert.png',
       'python': 'certificates/python_cert.jpg'
       // weitere Skills ...
     };
