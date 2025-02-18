@@ -24,3 +24,23 @@ Willkommen zu deiner persönlichen DevOps-Bewerbungsseite! Dieses Projekt stellt
    ├── README.md
    └── certificates/
        └── (Hier liegen deine Zertifikats-Bilder)
+
+3. **Updaten der JS Datei**
+
+    Bilder für Zertifikate ablegen
+
+    Lege deine Zertifikats-Bilder im Ordner certificates ab.
+    Die Zuordnung zu den jeweiligen Skills erfolgt in der Datei script.js durch das Objekt skillImageMap.
+    Wo genau?
+    Im oberen Teil der script.js findest du einen Abschnitt:
+
+    ```
+    const skillImageMap = {
+      'linux': 'certificates/linux_cert.jpg',
+      'bash': 'certificates/bash_cert.jpg',
+      'python': 'certificates/python_cert.jpg'
+      // weitere Skills ...
+    };
+    ```
+    Der Schlüssel links (z. B. 'linux') muss genau so lauten (in Kleinbuchstaben), wie der Skill-Text in index.html (<div class="skill">Linux</div> →   „linux“).
+    Der Wert rechts (z. B. 'certificates/linux_cert.jpg') ist der Pfad zur Datei im Ordner certificates.
