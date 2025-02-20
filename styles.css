@@ -109,7 +109,7 @@ p {
 }
 
 .modal-content {
-  margin: auto;
+  margin-top: 10%;
   display: block;
   max-width: 80%;
   max-height: 80%;  
