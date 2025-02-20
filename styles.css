@@ -110,7 +110,7 @@ p {
 
 .modal-content {
   margin-top: 10%;
-  margin-bottom: 0%;
+  margin-bottom: auto;
   margin-left: auto;
   margin-right: auto;
   display: block;
